@@ -12,7 +12,7 @@ setup(
     download_url='https://github.com/lancelotimb/dd-graphs/archive/refs/tags/v_0.13.tar.gz',  # I explain this later on
     keywords=[],  # Keywords that define your package best
     install_requires=[
-        'ipython~=7.29.0'
+        'ipython'
     ],
     classifiers=[
         'Development Status :: 3 - Alpha',
