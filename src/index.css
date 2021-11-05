@@ -1,0 +1,9 @@
+.container {
+    margin-top: 15px;
+    max-width: 100%;
+}
+
+.title {
+    text-align: center;
+    font-family: "Noto Sans", sans-serif;
+}
