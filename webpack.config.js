@@ -21,7 +21,7 @@ module.exports = {
     },
     output: {
         filename: 'dd-graphs.js',
-        path: path.resolve(__dirname, 'dist'),
+        path: path.resolve(__dirname, 'DDGraphs/js'),
         library: {
             name: 'DDGraphs',
             type: 'var',

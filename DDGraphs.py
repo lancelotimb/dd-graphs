@@ -35,7 +35,7 @@ class TopListParams(TypedDict):
 
 
 def init():
-    return HTML("""The lib was successfully loaded 👍<script src='dist/dd-graphs.js'/>""")
+    return HTML("""The lib was successfully loaded 👍<script src='DDGraphs/js/dd-graphs.js'/>""")
 
 
 def draw_timeseries_graph(timestamps: Vector, series: Dict[str, Vector], params: TimeseriesParams):
