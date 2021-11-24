@@ -18,7 +18,7 @@ class TimeseriesParams(TypedDict):
     yAxis: Optional[YAxisParams]
 
 
-def draw_timeseries_graph(timestamps: Vector, series: Dict[str, Vector], params: TimeseriesParams):
+def draw_timeseries_graph(timestamps: Vector, series: Dict[str, Vector], params: TimeseriesParams) -> Javascript:
     return Javascript(
         """(function(element){DDGraphs.drawTimeseriesGraph(element.get(0), %s, %s,
     %s);})(element);"""

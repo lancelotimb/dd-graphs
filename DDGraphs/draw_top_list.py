@@ -11,7 +11,7 @@ class TopListParams(TypedDict):
     customWidth: Optional[int]
 
 
-def draw_top_list(keys: StringVector, values: Vector, params: TopListParams):
+def draw_top_list(keys: StringVector, values: Vector, params: TopListParams) -> Javascript:
     return Javascript(
         """(function(element){DDGraphs.drawTopList(element.get(0), %s, %s,
     %s);})(element);"""

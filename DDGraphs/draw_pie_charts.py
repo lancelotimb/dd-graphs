@@ -12,7 +12,7 @@ class PieChartParams(TypedDict):
     customWidth: Optional[int]
 
 
-def draw_pie_chart(keys: StringVector, values: Vector, params: PieChartParams):
+def draw_pie_chart(keys: StringVector, values: Vector, params: PieChartParams) -> Javascript:
     return Javascript(
         """(function(element){DDGraphs.drawPieChart(element.get(0), %s, %s,
     %s);})(element);"""
